@@ -9,6 +9,7 @@ export function BookList({ books, inputValue, onChangeInput }) {
           search
         </span>
         <input
+          data-cy="filterInput"
           className={style.filterInput}
           type="text" 
           placeholder="Pesquisar por autor, título ou gênero"
@@ -22,7 +23,7 @@ export function BookList({ books, inputValue, onChangeInput }) {
       <ul className={style.bookList}>
         {books.map(book => {
           return (
-            <li key={book.ISBN}>
+            <li key={book.ISBN} data-cy="booksList">
               <CardBook {...book} />
             </li>
           );
