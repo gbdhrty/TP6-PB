@@ -1,0 +1,33 @@
+.listContainer {
+  padding: 8px;
+}
+
+.listFilter {
+  color: #727272;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.filterInput {
+  outline: none;
+  border: 1px solid #bababa;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 1.1em;
+  width: 330px;
+}
+
+.filterInput:focus {
+  border: 1px solid #000;
+}
+
+.bookList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  list-style-type: none;
+  gap: 10px;
+}
